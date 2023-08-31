@@ -1,0 +1,503 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#topbar {
+    width: 100%;
+    box-shadow: 0 2px 5px #ccc;
+    background-color: white;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 16px 8%;
+}
+#left-menu {
+    display: inline-flex;
+    justify-content: start;
+    align-items: center;
+}
+#logo {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-right: 16px;
+}
+#logo > a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+#logo span {
+    font-weight: 800;
+}
+#left-menu > a {
+    text-decoration: none;
+    color: black;
+    margin-left: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#search-wrapper {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+#search-wrapper > i {
+    position: absolute;
+    color: #999;
+    font-size: 18px;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+}
+#search-box {
+    width: 100%;
+    border: 1px solid rgb(245, 242, 242);
+    background-color: rgb(245, 242, 242);
+    box-sizing: border-box;
+    padding: 10px 24px 8px 48px;
+    color: black;
+    outline: none;
+}
+#right-menu {
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+}
+#cart-wrapper {
+    position: relative;
+    margin-right: 32px;
+}
+#cart-count {
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 600;
+    background-color: #009688;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    right: -12px;
+}
+#cart-wrapper > a {
+    text-decoration: none;
+    color: black;
+}
+#cart-wrapper i {
+    font-size: 18px;
+    cursor: pointer;
+}
+#right-menu > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+#spacing a{
+    
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 40px;
+    color: black;
+}
+
+
+
+.slider-wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+    margin-top: 100px;
+
+}
+.slider{
+    margin-left: -290px;
+    display: flex;
+    aspect-ratio: 4.5/1;
+    height:300px;
+    overflow-x:hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+    border-radius: 0.5rem;
+}
+.slider img{
+    flex:1 0 100%;
+    scroll-snap-align: start;
+    object-fit:fill;
+    height:100%;
+    width:100%
+}
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom:-1.75em;
+    left:50%;
+    transform:translateX(-50%);
+    z-index: 1;
+
+}
+
+.slider-nav a{
+    width:0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: gray;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+.slider-nav a:hover{
+    opacity: 1;
+}
+/* second */
+
+
+#container{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 20px;
+
+}
+.card{
+    width:18%;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.clothing-section{
+    
+    height: 350px;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 10px;
+    
+}
+.Accesories-section{
+    height: 350px;
+    width: 100%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 10px;
+    
+}
+.clothing-section img{
+    
+
+    width:100%;
+    height:200px
+
+}
+.Accesories-section img{
+    
+    
+    width:100%;
+    height:200px
+
+}
+
+
+#Accessory{
+    display: flex;
+    margin-left: 100px; 
+   margin-top: 20px;
+       
+}
+.name{
+    font-weight: 600;
+    margin: 0;
+    font-size: 15px;
+    padding: 10px 10px 10px 10px;
+    word-spacing: 2px;
+    color: black;
+}
+.brand{
+    font-size: 14px;
+    font-weight: 600;
+    color:rgb(69, 68, 68);
+    padding-left: 10px;
+}
+.price{
+    font-size: 16px;
+    font-weight: 600;
+    color: teal;
+    padding: 10px 10px 0px 10px;
+}
+
+
+
+#container01{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.leftside img{
+width:350px;
+height: 500px;
+}
+
+.right{
+    width: 60%;
+    margin-left: 100px;
+}
+
+.name1{
+    font-size: 45px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+.brand1{
+    font-size: 1.5em;
+    color: rgb(106, 106, 106);
+    font-weight: 600;
+    padding-top: 10px;
+}
+.price1{
+    font-size: 24px;
+    color: #3b3a3a;
+    font-weight: 400;
+    padding-top: 10px;
+}
+.price-rs{
+    max-width: 500px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #009688;
+    margin: 0;
+    display: inline-block;
+    padding-bottom: 10px;
+
+}
+
+.des{
+    font-size: 24px;
+    color: rgba(33, 33, 33, 0.8);
+    margin-top: 36px;
+    font-weight: 400;
+    margin-bottom:20px;
+ 
+}
+.description{
+    max-width: 500px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 10px;
+}
+
+.photos img{
+    width:80px;
+    height:80px;
+    padding-right: 6px;
+    padding-top:20px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.photos img:hover{
+    border:2px solid rgb(2, 64, 2);
+}
+
+
+/* #cart-count{
+margin-left:1000px;
+} */
+
+#button{
+    font-weight: 600;
+padding: 10px 30px 10px 30px;
+background-color: #009688;
+color:white;
+border-radius: 10px;
+font-size: 16px;
+cursor: pointer;
+margin-top: 50px;
+}
+
+
+
+
+/* check out pageeee */
+
+#main-heading {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 48px;
+}
+
+#content-wrapper {
+    display: flex;
+    justify-content: start;
+}
+
+#card-list{
+    width: 50%;
+}
+
+.section-heading {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.checkout-card {
+    display: flex;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 5px;
+    background-color: white;
+    max-width: 600px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.checkout-product-img {
+    width: 80px;
+    min-width: 80px;
+    border-radius: 5px;
+    margin-right: 16px;
+}
+
+div {
+    display: block;
+}
+
+.checkout-card p {
+    margin: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.section-heading {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+#total-amount {
+    color: black;
+    opacity: 0.8;
+    font-size: 24px;
+    font-weight: 800;
+    margin-left: 4px;
+}
+
+#btn-place-order {
+    background-color: #009688;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    padding: 18px 36px;
+    border-radius: 6px;
+    margin-top: 36px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+#content-wrapper > div:last-of-type {
+    width: 50%;
+    height: fit-content;
+    margin-top: 48px;
+    margin-left: 3%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 5px;
+    padding: 16px;
+}
+
+
+/* order placement  code is here*/
+
+.order-header{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size:x-large;
+}
+
+
+#p{
+    color: #3b3a3a;
+    text-align: center;
+}
+.rightmark{
+    margin-top: 140px;
+    margin-left: 690px;
+    /* align-items: center; */
+    background-color:rgb(63, 207, 63);
+  
+    width: 10px;
+    border-radius: 100px; 
+    padding-top: 40px;
+    padding-bottom: 35px;
+    padding-right: 70px;
+    padding-left: 45px;
+    justify-content: center;
+    color: azure;
+    font-size: 35px;
+    
+}
+
+/* foooter  css code is here */
+
+footer {
+    width: 100%;
+    background-color: #1c1b1e;
+    display: flex;
+    justify-content:space-around;
+    
+    box-sizing: border-box;
+    padding: 4% 8%;
+    margin-top: 100px;
+}
+
+.footer-heading {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-top: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0.8;
+}
